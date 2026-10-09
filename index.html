@@ -144,6 +144,29 @@
       background: #101a20;
       color: #c1cbce;
     }
+        /* Bouton de retour vers LinkTech Solution */
+    .retour-linktech {
+      position: fixed;
+      bottom: 85px;
+      right: 30px;
+      z-index: 100;
+    }
+
+    .retour-linktech a {
+      display: inline-block;
+      background-color: #174A78;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    .retour-linktech a:hover {
+      background-color: #2675B5;
+    }
 
     @media (max-width: 650px) {
       header {
@@ -258,6 +281,13 @@
     <p>Contact : contact@votre-domaine.fr</p>
     <p>&copy; 2026 Linktech Services</p>
   </footer>
+
+    <!-- Bouton retour vers le site principal -->
+  <div class="retour-linktech">
+    <a href="https://linktech-solution.com" rel="noopener">
+      ← LinkTech Solution
+    </a>
+  </div>
 
 </body>
 </html>
