@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linktech Services</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background: #17242c;
+    }
+
+    /* Image de fond personnalisable */
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.55),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url("images/background.jpg");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 8%;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #d5b784;
+    }
+
+    .hero-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 10%;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 78px);
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 23px;
+      color: #e4c79c;
+      margin-bottom: 30px;
+    }
+
+    .description {
+      max-width: 800px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 15px 35px;
+      background: #c5a477;
+      color: #17242c;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #e4c79c;
+    }
+
+    section {
+      padding: 75px 10%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit, minmax(230px, 1fr)
+      );
+      gap: 25px;
+    }
+
+    .service {
+      background: #263942;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .service h3 {
+      color: #e4c79c;
+      margin-bottom: 15px;
+    }
+
+    .service p {
+      line-height: 1.7;
+      color: #d1d9dc;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      background: #101a20;
+      color: #c1cbce;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero" id="accueil">
+
+    <header>
+      <div class="logo">LINKTECH SERVICES</div>
+
+      <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero-content">
+      <h1>Linktech Services</h1>
+
+      <p class="subtitle">
+        L'art d'intégrer la technologie
+        à votre intérieur
+      </p>
+
+      <p class="description">
+        Spécialisés dans les finitions décoratives
+        et l'adaptation des installations informatiques
+        aux espaces existants, nous proposons des
+        solutions discrètes et esthétiques.
+
+        Intégration des câblages sous parquet,
+        passage de réseaux derrière les cloisons
+        et faux murs, adaptation aux meubles,
+        habillages et finitions sur mesure.
+
+        Notre objectif : préserver l'harmonie
+        de vos espaces tout en répondant
+        à vos besoins techniques.
+      </p>
+
+      <a href="#services" class="btn">
+        Découvrir nos services
+      </a>
+    </div>
+  </div>
+
+  <section id="services">
+    <h2>Nos domaines d'intervention</h2>
+
+    <div class="services">
+
+      <div class="service">
+        <h3>Finitions & décoration</h3>
+        <p>
+          Travaux de finition, habillages,
+          ajustements décoratifs et
+          adaptation aux aménagements existants.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Intégration des câblages</h3>
+        <p>
+          Dissimulation et passage des câbles
+          informatiques sous parquet,
+          dans les plinthes, goulottes,
+          faux murs et cloisons techniques.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Mobilier & informatique</h3>
+        <p>
+          Adaptation des postes informatiques,
+          équipements réseau et connexions
+          aux meubles et espaces de travail.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Aménagement technique</h3>
+        <p>
+          Installation de prises réseau,
+          passage de câbles, raccordements
+          et finitions pour une intégration
+          fonctionnelle et esthétique.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Linktech Services</p>
+    <p>Aménagements, finitions et intégration informatique</p>
+    <p>Contact : contact@votre-domaine.fr</p>
+    <p>&copy; 2026 Linktech Services</p>
+  </footer>
+
+</body>
+</html>
