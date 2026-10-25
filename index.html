@@ -145,34 +145,45 @@
       color: #c1cbce;
     }
         /* Bouton de retour vers LinkTech Solution */
-    .retour-linktech {
+      /* Grand cadre vers LinkTech Solution */
+  .retour-linktech {
       position: fixed;
-      bottom: 85px;
+      bottom: 35px;
       right: 30px;
       z-index: 100;
     }
-
-    .retour-linktech a {
-      display: inline-block;
+  
+  .retour-linktech a {
+      display: block;
+      width: 300px;
+      max-width: calc(100vw - 40px);
+      padding: 22px 25px;
+  
       background-color: #174A78;
       color: white;
-      padding: 12px 22px;
-      border-radius: 8px;
+  
+      border: 1px solid #c5a477;
+      border-radius: 12px;
+  
+      text-align: center;
       text-decoration: none;
+      font-size: 18px;
       font-weight: bold;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s;
+      line-height: 1.5;
+  
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+      transition: background-color 0.3s, transform 0.3s;
     }
-
-    .retour-linktech a:hover {
+  
+  .retour-linktech a:hover {
       background-color: #2675B5;
+      transform: translateY(-3px);
     }
-
-    @media (max-width: 650px) {
-      header {
-        flex-direction: column;
-        gap: 20px;
-      }
+      @media (max-width: 650px) {
+        header {
+          flex-direction: column;
+          gap: 20px;
+        }
 
       nav a {
         margin: 0 10px;
@@ -281,13 +292,18 @@
     <p>Contact : contact@votre-domaine.fr</p>
     <p>&copy; 2026 Linktech Services</p>
   </footer>
-
-    <!-- Bouton retour vers le site principal -->
-  <div class="retour-linktech">
-    <a href="https://linktech-solution.com" rel="noopener">
-      ← LinkTech Solution
+<!-- Cadre vers le site principal -->
+<div class="retour-linktech">
+    <a href="https://linktech-solution.com"
+       rel="noopener">
+        Essayez nos solutions informatiques
+        avec LinkTech Solutions
+        <span style="display:block; margin-top:10px;
+                     color:#e4c79c; font-size:14px;">
+            Découvrir le site →
+        </span>
     </a>
-  </div>
+</div>
 
 </body>
 </html>
